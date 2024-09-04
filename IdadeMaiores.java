@@ -34,11 +34,12 @@ public class IdadeMaiores {
             }
         }
 
-        // Calcula e exibe a soma e a média das idades das pessoas maiores de idade
+       //faz o calculo e exibe a soma e a media
         if (contadorMaiores > 0) {
             double mediaMaiores = (double) somaMaiores / contadorMaiores;
+            String mediaFormatada = String.format("%.2f", mediaMaiores);
             System.out.println("Soma das idades maiores de idade: " + somaMaiores);
-            System.out.println("Média das idades maiores de idade: " + mediaMaiores);
+            System.out.println("Média das idades maiores de idade: " + mediaFormatada);
         } else {
             System.out.println("Não há pessoas maiores de idade.");
         }
